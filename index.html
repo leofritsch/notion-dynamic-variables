@@ -1,14 +1,32 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Today's Date</title>
-  </head>
-  <body>
-    <h3 id="date"></h3>
-    <script>
-      var today = new Date();
-      var date = today.toLocaleDateString();
-      document.getElementById("date").innerHTML = date;
-    </script>
-  </body>
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Today's Date</title> 
+  </head> 
+  <body> 
+    <h3 id="date"></h3> 
+    <script> 
+      var today = new Date(); 
+      var date = getUrlParameter("date"); 
+
+      if (date) { 
+        var dateParts = date.split('-'); 
+        var specifiedDate = new Date(Date.UTC(dateParts[0], dateParts[1] - 1, dateParts[2])); 
+        var timeDiff = Math.abs(today.getTime() - specifiedDate.getTime()); 
+        var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+        document.getElementById("date").innerHTML = diffDays + " days difference from " + date; 
+      } else { 
+        date = today.toLocaleDateString(); 
+        document.getElementById("date").innerHTML = "Today is " + date; 
+      } 
+
+      // Function to get URL parameters 
+      function getUrlParameter(name) { 
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]'); 
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'); 
+        var results = regex.exec(location.search); 
+        return results === null ? undefined : decodeURIComponent(results[1].replace(/\+/g, ' ')); 
+      } 
+    </script> 
+  </body> 
 </html>
