@@ -14,7 +14,7 @@
         var specifiedDate = new Date(Date.UTC(dateParts[0], dateParts[1] - 1, dateParts[2])); 
         var timeDiff = Math.abs(today.getTime() - specifiedDate.getTime()); 
         var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-        document.getElementById("date").innerHTML = diffDays + " days difference from " + date; 
+        document.getElementById("date").innerHTML = diffDays + " days"; 
       } else { 
         date = today.toLocaleDateString(); 
         document.getElementById("date").innerHTML = "Today is " + date; 
