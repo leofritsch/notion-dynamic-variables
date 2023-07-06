@@ -12,5 +12,5 @@ Copy and paste this link in Notion. When prompted, choose "embed":
 " Gives you the current week number
 Copy and paste this link in Notion. When prompted, choose "embed":
 * [https://leofritsch.github.io/notion-dynamic-variables/week](https://leofritsch.github.io/notion-dynamic-variables/week)
-#### (Others coming soon - [add a suggestion](https://github.com/leofritsch/notion-dynamic-variables/issues/new)!)
+#### (Others coming soon 👉 [add a suggestion](https://github.com/leofritsch/notion-dynamic-variables/discussions/2)!)
 * 
