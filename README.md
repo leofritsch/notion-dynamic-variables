@@ -4,10 +4,13 @@ Well, now you can!
 
 ## How to use
 #### 📅 /date
-* Embed the normal link to see today's date at all times: [https://leofritsch.github.io/notion-dynamic-variables/date](https://leofritsch.github.io/notion-dynamic-variables/date)
-* Embed the link following by a date format like `?date=2021-06-1`to see the day difference instead: [https://leofritsch.github.io/notion-dynamic-variables/date?date=2021-06-1](https://leofritsch.github.io/notion-dynamic-variables/date?date=2021-06-1)
+" Display either today's date or the difference in days between today and a date
+Copy and paste this link in Notion. When prompted, choose "embed":
+* Today's date: [https://leofritsch.github.io/notion-dynamic-variables/date](https://leofritsch.github.io/notion-dynamic-variables/date)
+* Difference of days: Write a date format like `?date=2021-06-1` at the end to see the day difference: [https://leofritsch.github.io/notion-dynamic-variables/date?date=2021-06-1](https://leofritsch.github.io/notion-dynamic-variables/date?date=2021-06-1)
 #### 📅 /week
-* Gives you the current week number.
+" Gives you the current week number
+Copy and paste this link in Notion. When prompted, choose "embed":
 * [https://leofritsch.github.io/notion-dynamic-variables/week](https://leofritsch.github.io/notion-dynamic-variables/week)
 #### (Others coming soon - [add a suggestion](https://github.com/leofritsch/notion-dynamic-variables/issues/new)!)
 * 
